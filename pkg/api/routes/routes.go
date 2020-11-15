@@ -1,4 +1,4 @@
-package transports
+package routes
 
 import (
 	"net/http"
@@ -14,7 +14,6 @@ func NewHTTP(app *fiber.App) {
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello GOLANG")
 	})
-
 
 	r.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("api/v1/ Root")

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"go-boilerplate/pkg/api"
+	server "go-boilerplate/pkg/server"
 )
 
 func main() {
-	api.Start()
+	server.Start()
 }
